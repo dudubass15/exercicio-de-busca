@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar produtos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body class="app">
 
@@ -15,7 +15,7 @@
             <h2>Digite o seu código de rastreio</h2>
         </div>
         <div class="card-body">
-            <form>
+            <form onsubmit="return false;">
                 <div class="formgroup">
                     <label for="codigo-rastreio">Cole seu código aqui:</label>
                     <input type="text" id="codigo-rastreio" name="codigo-rastreio" class="form-control">
@@ -25,9 +25,8 @@
                 </div>
             </form>
         </div>
-        <div class="card-footer"></div>
     </div>
     
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/index.js"></script>
 </html>

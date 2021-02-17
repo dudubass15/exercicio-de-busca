@@ -5,27 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto - Status</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/status.css">
 </head>
 <body class="app">
 
     <div class="card">
         <div class="card-header">
-            <h2>Digite o seu código de rastreio</h2>
+            <h2 id="codigo"></h2>
         </div>
         <div class="card-body">
-            <form>
-                <div class="formgroup">
-                    <label for="codigo-rastreio">Cole seu código aqui:</label>
-                    <input type="text" id="codigo-rastreio" name="codigo-rastreio" class="form-control">
+            <div class="itens">
+                <div class="item">
+                    <div class="item-header">
+                        <i class="bi bi-mailbox"></i>
+                    </div>
+                    <div class="item-body">
+                        <p>Entrada</p>
+                        <div class="p-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path class="p-1" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path class="p-2" d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-100">
-                    <button class="btn-send">Buscar</button>
+
+                <div class="item">
+                    <div class="item-header">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <div class="item-body">
+                        <p>Em transporte</p>
+                        <div class="p-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path class="p-1" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path class="p-2" d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-            </form>
+
+                <div class="item">
+                    <div class="item-header">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <div class="item-body">
+                        <p>Entregue</p>
+                        <div class="p-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path class="p-1" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path class="p-2" d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card-footer"></div>
     </div>
     
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/status.js"></script>
 </html>
