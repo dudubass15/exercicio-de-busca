@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;700;900&display=swap');
+
+:root {
+    --color-primeiro:   #000000;
+    --color-segundo:    #B2BB6C;
+    --color-terceiro:   #FFFFFF;
+    --color-quarto:     #C9F0ED;
+    --color-quinto:     #C5C5C5;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #E2A391;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.app {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app .card {
+    position: relative;
+    width: 700px;
+    height: 350px;
+    padding: 50px;
+    background-color: var(--color-terceiro);
+    border-radius: 3px;
+    box-shadow: 1px 1px 40px #0000002a;
+}
+.app .card .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.app .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+.app .card .card-body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.app .card .card-body form .formgroup {
+    position: relative;
+    width: 100%;
+}
+.app .card .card-body form .formgroup .form-control {
+    width: 100%;
+    height: 35px;
+    padding: 6px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+}
+.app .card .card-body form .w-100 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.app .card-body form .w-100 .btn-send {
+    width: 120px;
+    min-height: 40px;
+    padding: 10px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+.app .card-body form .w-100 .btn-send:hover {
+    background-color: #c0c0c0;
+    border: none;
+}
+.app .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #ffe600;
+}
